@@ -1,0 +1,5 @@
+<resources>
+    <string name="application_name">Playground</string>
+    <string name="counter_header_text">You have pushed the button this many times:</string>
+    <string name="increment_fab_content_description">Increment counter button.</string>
+</resources>
