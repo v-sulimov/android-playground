@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp" />
+
+    <!-- Content Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding">
+
+        <!-- Close Button -->
+        <ImageButton
+            android:id="@+id/event_close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/overlay_create_event_close_content_description"
+            android:src="@drawable/ic_close"
+            app:tint="?attr/colorOnSurface" />
+
+        <!-- Add Title Field -->
+        <EditText
+            android:id="@+id/event_details_edit_text"
+            style="@style/Widget.Material3.TextInputEditText.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint="@string/overlay_create_event_event_details_hint"
+            android:inputType="textMultiLine" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/event_save_button"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/overlay_create_event_event_save_text" />
+    </LinearLayout>
+
+</LinearLayout>
