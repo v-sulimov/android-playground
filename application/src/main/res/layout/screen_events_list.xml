@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/events_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceContainerLow"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            style="@style/TextAppearance.Material3.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:paddingStart="@dimen/default_padding"
+            android:text="@string/screen_events_list_toolbar_title" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/no_events_placeholder"
+        style="@style/TextAppearance.Material3.DisplayMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/screen_events_list_empty_message" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/events_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/events_list_toolbar"
+        android:clipToPadding="false"
+        android:paddingTop="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_event_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/default_padding"
+        android:contentDescription="@string/create_event_fab_content_description"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</RelativeLayout>
