@@ -46,6 +46,7 @@ fun PlaygroundTheme(
         }
 
         darkTheme -> DarkColorScheme
+
         else -> LightColorScheme
     }
 
