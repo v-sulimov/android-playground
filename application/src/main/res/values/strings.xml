@@ -1,3 +1,13 @@
 <resources>
     <string name="application_name">Playground</string>
+
+    <string name="action_continue">Continue</string>
+
+    <string name="onboarding_title">Welcome to the libsubsonic Demo</string>
+    <string name="onboarding_description">This application serves as a technical showcase for the libsubsonic library.\n\nTo get started, please keep the following in mind:\n\nCheck your Logs: This app is a headless style demo. All server responses, raw JSON, and library events are printed to Logcat. Filter by application package name to see the library working under the hood.\n\nServer Configuration: On the following screen, you will be prompted for your Server URL, username, and password. These are required to authenticate against the Subsonic API and begin the demo.</string>
+
+    <string name="configuration_title">Configuration</string>
+    <string name="configuration_server_url_label">Server URL</string>
+    <string name="configuration_username_label">Username</string>
+    <string name="configuration_password_label">Password</string>
 </resources>
